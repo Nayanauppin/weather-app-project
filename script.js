@@ -56,7 +56,7 @@ function updateBackgroundAndGif(iconCode, weatherMain, isDaytime) {
     } else if (lowerCaseWeatherMain === 'snow') {
         gifPath = `assets/snow_${timeOfDay}.gif`;
     } else if (iconCode.startsWith('01') && lowerCaseWeatherMain !== 'clear') { // Sunny condition
-        gifPath = `assets/sunny.gif`;
+        gifPath = `assets/Sunny.gif`;
     } else {
         gifPath = `assets/default_${timeOfDay}.gif`;
     }
