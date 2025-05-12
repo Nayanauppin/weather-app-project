@@ -37,12 +37,13 @@ ${error.message}
 }
 
 function updateBackgroundAndGif(iconCode, weatherMain, isDaytime) {
-    document.body.className = ''; // Reset body classes
+    document.body.className = '';
     document.querySelectorAll('.cloud, .raindrop, .sun').forEach(el => el.remove());
-    weatherBackground.style.backgroundImage = ''; // Clear any previous background image
+    weatherBackground.style.backgroundImage = '';
     const lowerCaseWeatherMain = weatherMain.toLowerCase();
     let gifPath = '';
     const timeOfDay = isDaytime ? 'day' : 'night';
+
     if (lowerCaseWeatherMain === 'clear') {
         gifPath = `assets/clear_sky_${timeOfDay}.gif`;
     } else if (lowerCaseWeatherMain.includes('haze') || lowerCaseWeatherMain.includes('mist') || lowerCaseWeatherMain.includes('fog')) {
@@ -55,11 +56,12 @@ function updateBackgroundAndGif(iconCode, weatherMain, isDaytime) {
         gifPath = `assets/rainy_${timeOfDay}.gif`;
     } else if (lowerCaseWeatherMain === 'snow') {
         gifPath = `assets/snow_${timeOfDay}.gif`;
-    } else if (iconCode.startsWith('01') && lowerCaseWeatherMain !== 'clear') { // Sunny condition
+    } else if (iconCode.startsWith('01') && lowerCaseWeatherMain !== 'clear') {
         gifPath = `assets/Sunny.gif`;
     } else {
         gifPath = `assets/default_${timeOfDay}.gif`;
     }
+
     weatherBackground.style.backgroundImage = `url('${gifPath}')`;
 }
 
