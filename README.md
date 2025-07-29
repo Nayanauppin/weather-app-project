@@ -29,11 +29,10 @@ API Key
 This application uses the OpenWeatherMap API. You will need to sign up for a free API key at  [https://openweathermap.org/](https://openweathermap.org/)  and replace  `'YOUR_API_KEY'`  in the  `script.js`  file with your key for the application to work.
 
 #  Future Improvements
-1. Add ability to search by location (latitude/longitude).
-2. Display a more detailed forecast (e.g., hourly or daily).
-3. Implement error handling for invalid city names or API errors.
-4. Make the design more responsive.
-5. Add unit selection (Celsius, Fahrenheit).
+1. Display a more detailed forecast (e.g., hourly or daily).
+2. Implement error handling for invalid city names or API errors.
+3. Make the design more responsive.
+4. Add unit selection (Celsius, Fahrenheit).
 #  Credits
 1. Weather data provided by [OpenWeatherMap](https://openweathermap.org/)
 2. Background images/GIFs from [Unsplash](https://unsplash.com/), [Giphy](https://giphy.com/), or similar.
